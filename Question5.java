@@ -6,12 +6,10 @@ public class Question5
   {
 
     Scanner in = new Scanner(System.in); // import Scanner Class
-    System.out.print("Enter the number of integers you would like to input: ");
     int num = in.nextInt();
     int[] numArray = new int[num]; //create array of size num\
     //add integers into numArray
     for (int i = 0; i < num; i++){
-      System.out.print("Enter an integer: ");
       numArray[i] = in.nextInt();
     }
     //Find mode in set of integers
@@ -34,6 +32,6 @@ public class Question5
         modeNumber = i;
       }
     }
-    System.out.println("The mode is " + modeNumber);
+    System.out.println(modeNumber);
   }
 }
